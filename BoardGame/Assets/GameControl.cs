@@ -81,9 +81,11 @@ public class GameControl : MonoBehaviour {
         PanelQuiz = GameObject.Find("PanelQuiz");
         PanelEvent = GameObject.Find("PanelEvent");
         PanelEnd = GameObject.Find("PanelEnd");
+
         //game object dice variable
         Dice = GameObject.Find("Dice");
 
+        //find both player objects
         player1 = GameObject.Find("Player1");
         player2 = GameObject.Find("Player2");
 
