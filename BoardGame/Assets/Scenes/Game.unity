@@ -2527,6 +2527,55 @@ MonoBehaviour:
     - Black Hole
     - Planet
     ans: Planet
+  - question: 5 / 10
+    choice:
+    - 0.4
+    - 0.5
+    - 5
+    - 10
+    ans: 0.5
+  - question: 5 x 10
+    choice:
+    - 15
+    - 50
+    - 5
+    - 10
+    ans: 50
+  - question: 245 / 5
+    choice:
+    - 49
+    - 240
+    - 10
+    - 45
+    ans: 49
+  - question: (2 x 3) x 2
+    choice:
+    - 13
+    - 100
+    - 7
+    - 12
+    ans: 12
+  - question: 6 x 6 x 6
+    choice:
+    - 18
+    - 215
+    - 600
+    - 216
+    ans: 216
+  - question: 2 to the power of 6
+    choice:
+    - 32
+    - 12
+    - 65
+    - 64
+    ans: 64
+  - question: (2 + 3) x 9
+    choice:
+    - 32
+    - 34
+    - 54
+    - 45
+    ans: 45
   QuestionText: {fileID: 658716430}
   animator: {fileID: 1296529438}
   TrueAnswerText: {fileID: 971599298}
