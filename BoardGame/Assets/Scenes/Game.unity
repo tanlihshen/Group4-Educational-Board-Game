@@ -2576,6 +2576,48 @@ MonoBehaviour:
     - 54
     - 45
     ans: 45
+  - question: The following are carbons except
+    choice:
+    - Diamond
+    - Graphite
+    - Amorphous carbon
+    - Ferrite
+    ans: Ferrite
+  - question: Sweet potato is an example of modified
+    choice:
+    - Leaf
+    - Root
+    - Steam
+    - Branch
+    ans: Root
+  - question: 'Earthquakes are caused due to '
+    choice:
+    - Tsunami
+    - Typhoon
+    - Construction
+    - Tectonic plates
+    ans: Tectonic plates
+  - question: An acidic liquid will have a ___ pH
+    choice:
+    - Low
+    - Medium
+    - High
+    - No
+    ans: Low
+  - question: Lightest element in the periodic table?
+    choice:
+    - Helium
+    - Carbon
+    - Nitrogen
+    - Hydrogen
+    ans: Hydrogen
+  - question: The doctor _____ out for ten minutes.
+    choice:
+    - Go
+    - Going
+    - Gone
+    - Went
+    ans: Went
   QuestionText: {fileID: 658716430}
   animator: {fileID: 1296529438}
   TrueAnswerText: {fileID: 971599298}
