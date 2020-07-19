@@ -2618,6 +2618,55 @@ MonoBehaviour:
     - Gone
     - Went
     ans: Went
+  - question: The new restaurant ______ last week.
+    choice:
+    - Open
+    - Opened
+    - Opening
+    - Start
+    ans: Opened
+  - question: Had they ______ arrived when you got there?
+    choice:
+    - After
+    - Before
+    - Still
+    - Already
+    ans: Already
+  - question: Chocolate is my greatest ______.
+    choice:
+    - Weakness
+    - Weakened
+    - Weak
+    - Weaken
+    ans: Weakness
+  - question: I'm sorry, you will just have to ______.
+    choice:
+    - Wait
+    - Avoid
+    - Like
+    - Attempt
+    ans: Wait
+  - question: He was invited ______ he did not come.
+    choice:
+    - If
+    - When
+    - While
+    - But
+    ans: But
+  - question: _____ many times every winter in Frankfurt.
+    choice:
+    - It snows
+    - It snowed
+    - It is snowed
+    - It is snow
+    ans: It snows
+  - question: Babies _____ when they are hungry.
+    choice:
+    - Cry
+    - Cries
+    - Cried
+    - Crying
+    ans: Cry
   QuestionText: {fileID: 658716430}
   animator: {fileID: 1296529438}
   TrueAnswerText: {fileID: 971599298}

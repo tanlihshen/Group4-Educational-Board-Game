@@ -197,6 +197,7 @@ public class GameControl : MonoBehaviour {
                 TextEnd.gameObject.SetActive(true);
                 TextEnd.GetComponent<Text>().text = "Player 2 Wins";
                 TextScore.gameObject.SetActive(true);
+                //To do: Fix this line, player2score then player1score
                 TextScore.GetComponent<Text>().text = "Player 2: " + player1score + "\n" + "Player 1: " + player2score;
                 //whoWinsTextShadow.GetComponent<Text>().text = "Player 2 Wins";
                 gameOver = true;
