@@ -39,7 +39,7 @@ public class GameControl : MonoBehaviour {
     [SerializeField]
     private float delay = 1f;
 
-    private static GameObject whoWinsTextShadow, TextEnd, TextScore ,player1MoveText, player2MoveText, Dice, player1ScoreText, player2ScoreText, EventText, EventDesc, EventTitle, trueanswer;
+    private static GameObject TextEnd, TextScore ,player1MoveText, player2MoveText, Dice, player1ScoreText, player2ScoreText, EventText, EventDesc, EventTitle, trueanswer;
 
     private static GameObject player1, player2;
 
@@ -65,7 +65,7 @@ public class GameControl : MonoBehaviour {
     // Use this for initialization
     void Start () {
 
-        whoWinsTextShadow = GameObject.Find("WhoWinsText");
+
         TextEnd = GameObject.Find("TextEnd");
         TextScore = GameObject.Find("TextScore");
         EventText = GameObject.Find("EventText");
@@ -95,7 +95,6 @@ public class GameControl : MonoBehaviour {
         player1.GetComponent<FollowThePath>().backAllowed = false;
         player2.GetComponent<FollowThePath>().backAllowed = false;
 
-        whoWinsTextShadow.gameObject.SetActive(false);
         TextEnd.gameObject.SetActive(false);
         TextScore.gameObject.SetActive(false);
         //hide panel when game starts
@@ -189,7 +188,6 @@ public class GameControl : MonoBehaviour {
                 TextEnd.GetComponent<Text>().text = "Player 1 Wins";
                 TextScore.gameObject.SetActive(true);
                 TextScore.GetComponent<Text>().text = "Player 1: " + player1score + "\n" + "Player 2: " + player2score;
-                //whoWinsTextShadow.GetComponent<Text>().text = "Player 1 Wins";
                 gameOver = true;
             }
             else {
@@ -197,9 +195,7 @@ public class GameControl : MonoBehaviour {
                 TextEnd.gameObject.SetActive(true);
                 TextEnd.GetComponent<Text>().text = "Player 2 Wins";
                 TextScore.gameObject.SetActive(true);
-                //To do: Fix this line, player2score then player1score
-                TextScore.GetComponent<Text>().text = "Player 2: " + player1score + "\n" + "Player 1: " + player2score;
-                //whoWinsTextShadow.GetComponent<Text>().text = "Player 2 Wins";
+                TextScore.GetComponent<Text>().text = "Player 2: " + player2score + "\n" + "Player 1: " + player1score;  
                 gameOver = true;
             }
         }
