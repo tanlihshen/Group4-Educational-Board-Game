@@ -43,7 +43,7 @@ public class GameControl : MonoBehaviour {
 
     private static GameObject player1, player2;
 
-    public GameObject PanelQuiz, PanelEvent, PanelEnd;
+    public GameObject PanelQuiz, PanelEvent, PanelEnd, PanelPause;
 
     public static int diceSideThrown = 0;
     public static int player1StartWaypoint = 0;
@@ -81,6 +81,7 @@ public class GameControl : MonoBehaviour {
         PanelQuiz = GameObject.Find("PanelQuiz");
         PanelEvent = GameObject.Find("PanelEvent");
         PanelEnd = GameObject.Find("PanelEnd");
+        PanelPause = GameObject.Find("PanelPause"); 
 
         //game object dice variable
         Dice = GameObject.Find("Dice");
@@ -101,6 +102,7 @@ public class GameControl : MonoBehaviour {
         PanelQuiz.gameObject.SetActive(false);
         PanelEvent.gameObject.SetActive(false);
         PanelEnd.gameObject.SetActive(false);
+        PanelPause.gameObject.SetActive(false);
         //player turn text
         player1MoveText.gameObject.SetActive(true);
         player2MoveText.gameObject.SetActive(false);
