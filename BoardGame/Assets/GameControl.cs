@@ -210,7 +210,7 @@ public class GameControl : MonoBehaviour {
         EventTitle.GetComponent<Text>().text = "Congratulations!";
         EventDesc.GetComponent<Text>().text = "You've earned points for advancing!";
         EventText.GetComponent<Text>().text = "You've earned " + diceSideThrown + " points!";
-        Debug.Log("try again 2");
+        //Debug.Log("try again 2");
         PanelEvent.gameObject.SetActive(true);
         Dice.gameObject.SetActive(false);
     }
