@@ -90,6 +90,30 @@ public class GameControl : MonoBehaviour {
         player1 = GameObject.Find("Player1");
         player2 = GameObject.Find("Player2");
 
+        //reset all variable when game starts
+        diceSideThrown = 0;
+        player1StartWaypoint = 0;
+        player2StartWaypoint = 0;
+        TilePoint = 0;
+        TileEventCheck = false;
+
+        gameOver = false;
+        move = false;
+        back = false;
+
+        player1turn = false;
+        player2turn = false;
+        player1score = 0;
+        player2score = 0;
+
+        randomScore = 0;
+
+        player1.GetComponent<FollowThePath>().moveAllowed = false;
+        player2.GetComponent<FollowThePath>().moveAllowed = false;
+
+        player1.GetComponent<FollowThePath>().backAllowed = false;
+        player2.GetComponent<FollowThePath>().backAllowed = false;
+
         player1.GetComponent<FollowThePath>().moveAllowed = false;
         player2.GetComponent<FollowThePath>().moveAllowed = false;
 
